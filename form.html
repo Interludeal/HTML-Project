@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>웹프로그래밍 - JJS's 수강신청 체험</title>
+  </head>
+  <body>
+    <header>
+      <h1><center>JJS's 수강신청 체험</center></h1>
+    </header>
+
+    <center>
+      <form
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+        onsubmit="alert('수강 신청이 완료되었습니다!'); this.reset(); return false;"
+      >
+        <fieldset>
+          <legend><b>학생 정보</b></legend>
+          <label for="student-id"><b>학번:</b></label>
+          <input type="text" id="student-id" name="student-id" required /><br />
+
+          <label for="name"><b>이름:</b></label>
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="department"><b>학과:</b></label>
+          <input type="text" id="department" name="department" required /><br />
+
+          <label for="student-card"><b>학생증 제출:</b></label>
+          <input
+            type="file"
+            id="student-card"
+            name="student-card"
+            required
+          /><br />
+        </fieldset>
+
+        <br />
+        <fieldset>
+          <legend><b>수강 신청 과목</b></legend>
+          <p><b>! 신청할 과목을 선택하세요 !</b></p>
+          <input
+            type="checkbox"
+            id="subject1"
+            name="subjects[]"
+            value="웹 프로그래밍"
+          />
+          <label for="subject1">웹 프로그래밍</label><br />
+
+          <input
+            type="checkbox"
+            id="subject2"
+            name="subjects[]"
+            value="객체지향 프로그래밍"
+          />
+          <label for="subject2">객체지향 프로그래밍</label><br />
+
+          <input
+            type="checkbox"
+            id="subject3"
+            name="subjects[]"
+            value="컴퓨터 네트워크"
+          />
+          <label for="subject3">컴퓨터 네트워크</label><br />
+
+          <input
+            type="checkbox"
+            id="subject4"
+            name="subjects[]"
+            value="보안 자료구조"
+          />
+          <label for="subject4">보안 자료구조</label><br />
+
+          <input
+            type="checkbox"
+            id="subject5"
+            name="subjects[]"
+            value="English for Global Citizens Ⅲ"
+          />
+          <label for="subject5">English for Global Citizens Ⅲ</label><br />
+
+          <input
+            type="checkbox"
+            id="subject6"
+            name="subjects[]"
+            value="창업제품서비스와 역사"
+          />
+          <label for="subject6">창업제품서비스와 역사</label><br />
+
+          <input
+            type="checkbox"
+            id="subject7"
+            name="subjects[]"
+            value="4차산업혁명시대의공학탐색"
+          />
+          <label for="subject7">4차산업혁명시대의공학탐색</label><br />
+
+          <input
+            type="checkbox"
+            id="subject8"
+            name="subjects[]"
+            value="철학으로신화읽기"
+          />
+          <label for="subject8">철학으로신화읽기</label><br />
+
+          <input
+            type="checkbox"
+            id="subject9"
+            name="subjects[]"
+            value="휴학하기"
+            checked
+          />
+          <label for="subject9">휴학하기</label><br />
+        </fieldset>
+
+        <br />
+        <fieldset>
+          <legend><b>추가 정보</b></legend>
+          <label for="comments"><b>! 기타 요청 사항 !</b></label
+          ><br />
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea
+          ><br />
+
+          <label for="date"><b>희망 수강 날짜:</b></label>
+          <input type="date" id="date" name="date" required /><br />
+        </fieldset>
+
+        <br />
+        <input type="submit" value="신청하기" />
+        <input type="reset" value="초기화" />
+      </form>
+      <br />
+      <nav>
+        <a href="index.html"><b>Home으로 돌아가기</b></a>
+      </nav>
+    </center>
+  </body>
+</html>
